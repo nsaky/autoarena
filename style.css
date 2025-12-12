@@ -565,3 +565,20 @@ nav{
 }
 
 /* Help Section */
+#help{
+    padding: 3rem 6rem;
+    background-color: #405FF2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
+
+#help i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
