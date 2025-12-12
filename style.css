@@ -8,6 +8,8 @@ body{
     font-family: "DM Sans", sans-serif;
 }
 
+/* Hero */
+
 #hero{
     padding: 2rem 6rem;
     width: 100%;
@@ -61,3 +63,188 @@ nav{
     font-size: 5rem;
     font-weight: 900;
 }
+
+/* Most Serach SUVs */
+#most-searched{
+    padding: 4rem 4.2rem;
+}
+
+.searched-headers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.searched-headers p{
+    cursor: pointer;
+    transition: 0.2s font-weight, 0.2s color;
+}
+.searched-headers p:hover{
+    color: blue;
+    font-weight: 600;
+}
+
+/* Card Container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 340px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.bookmark-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 2;
+    color: #333;
+    transition: background 0.2s;
+}
+
+.bookmark-btn:hover {
+    background-color: #f9fafb;
+}
+
+.content {
+    padding: 20px;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 16px 0;
+    border: none;
+}
+
+.specs-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 10px;
+    color: #333;
+}
+
+.spec-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.spec-item span {
+    font-size: 0.9rem;
+    color: #111;
+    font-weight: 500;
+}
+
+.spec-item i {
+    font-size: 1.4rem;
+    color: #111;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111;
+}
+
+.details-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4f46e5;
+    font-weight: 500;
+    font-size: 1rem;
+    gap: 4px;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+.details-link i {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
