@@ -79,11 +79,10 @@ nav{
 
 .searched-headers p{
     cursor: pointer;
-    transition: 0.2s font-weight, 0.2s color;
+    transition: 0.2s underline;
 }
 .searched-headers p:hover{
-    color: blue;
-    font-weight: 600;
+    text-decoration: underline;
 }
 
 /* Card Container */
@@ -250,9 +249,10 @@ nav{
 
 /* CTA Section */
 #cta{
-    padding: 2rem 4.2rem;
+    padding: 6rem 6rem;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
 }
@@ -361,4 +361,100 @@ nav{
 
 .seller img{
     width: 100px;
+}
+
+/* Explore Brands */
+#explore-brands{
+    padding: 6rem 6rem;
+}
+
+.explore-headers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.explore-headers p{
+    cursor: pointer;
+    transition: 0.2s underline;
+}
+.explore-headers p:hover{
+    text-decoration: underline;
+}
+
+.brands-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 1px solid #E9E9E9;
+    width: 180px;
+    height: 140px;
+
+    cursor: pointer;
+
+    transition: 0.5s box-shadow;
+}
+
+.brand-card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.brand-card img{
+    height: 80px;
+}
+
+/* Finance */
+#finance{
+    padding: 6rem 6rem;
+    background-color: #F9FBFC;
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    align-items: center;
+    color: #050B20;
+}
+
+#finance img{
+    height: 550px;
+    border-radius: 1rem;
+}
+
+#finance div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#finance div p{
+    width: 80%;
+}
+
+#finance div button{
+    cursor: pointer;
+    padding: 1.2rem 2.5rem;
+    background-color: #405FF2;
+    width: fit-content;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+
+    transition: 1s box-shadow, 1s text-decoration;
+}
+
+#finance div button:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-decoration: underline;
 }
