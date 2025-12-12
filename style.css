@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "DM Sans", sans-serif;
 }
@@ -38,6 +42,10 @@ nav{
 .nav-links a{
     text-decoration: none;
     color: white;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
 }
 
 #logo{
